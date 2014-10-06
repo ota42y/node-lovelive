@@ -1,0 +1,29 @@
+{
+  "name": "lovelive",
+  "version": "0.0.1",
+  "description": "lovelive node pakage. feature: call and response, random lines",
+  "main": "./src/lovelive.coffee",
+  "author": {
+    "name": "ota42y",
+    "email": "ota42y@gmail(dot)com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "lovelive"
+  ],
+  "scripts": {
+    "test": "cake test"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:ota42y/lovelive.git"
+  },
+  "dependencies": {
+    "coffee-script": ">= 1.1.0"
+  },
+  "devDependencies": {
+    "chai": "~1.0.3",
+    "mocha": ">= 1.2.1",
+    "sinon": "~1.10.2"
+  }
+}
