@@ -19,7 +19,8 @@
     "url" : "git@github.com:ota42y/lovelive.git"
   },
   "dependencies": {
-    "coffee-script": ">= 1.1.0"
+    "coffee-script": ">= 1.1.0",
+    "js-yaml": ">=3.2.2"
   },
   "devDependencies": {
     "chai": "~1.0.3",
