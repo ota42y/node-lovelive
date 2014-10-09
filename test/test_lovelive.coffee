@@ -11,3 +11,7 @@ describe "LoveLive", ->
     it 'initialize', (done)->
       assert.notEqual @lovelive, null
       done()
+
+    it 'data set', (done) ->
+      assert.notEqual @lovelive.call_and_response, null
+      done()
