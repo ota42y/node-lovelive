@@ -25,3 +25,29 @@ describe "LoveLive", ->
       response = {'test': 100}
       assert.equal @lovelive.getRandomResponse(response), 'test'
       done()
+
+  describe "call", ->
+    beforeEach (done) ->
+      @lovelive = new LoveLive
+      done()
+
+    it 'get response', (done) ->
+      @lovelive.call_and_response = {"ファイトだよ": {"うんっ！": 100}}
+      assert.equal @lovelive.call("ファイトだよ！"), "うんっ！"
+      done()
+
+    it 'get no response', (done) ->
+      assert.equal @lovelive.call("完全にフルハウス"), null
+      done()
+
+  describe "news", ->
+    beforeEach (done) ->
+      @lovelive = new LoveLive
+      done()
+
+    it 'news', (done) ->
+      @lovelive.news (headline) ->
+        assert.notEqual headline.length, 0
+        done()
+
+      

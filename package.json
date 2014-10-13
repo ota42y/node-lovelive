@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "coffee-script": ">= 1.1.0",
-    "js-yaml": ">=3.2.2"
+    "js-yaml": ">=3.2.2",
+    "feedparser": ">=0.19.2",
+    "request": ""
   },
   "devDependencies": {
     "chai": "~1.0.3",
