@@ -32,4 +32,10 @@ class LoveLive
 
     throw new Error("can't decide response data (maybe bug)")
 
+  call: (call) ->
+    for call_regexp in Object.keys(@call_and_response)
+      if call.match(call_regexp)
+        return @getRandomResponse(@call_and_response[call_regexp])
+    return null
+
 module.exports.LoveLive = LoveLive
