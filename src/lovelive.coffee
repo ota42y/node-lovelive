@@ -18,4 +18,18 @@ class LoveLive
   registCallAndResponse: (call, response) ->
     @call_and_response[call] = response
 
+  getRandomResponse: (response) ->
+    sum = 0
+    for key in Object.keys(response)
+      sum += response[key]
+
+    rand = Math.floor(Math.random() * (sum+1));
+    check = 0
+    for key in Object.keys(response)
+      check += response[key]
+      if rand <= check
+        return key
+
+    throw new Error("can't decide response data (maybe bug)")
+
 module.exports.LoveLive = LoveLive
