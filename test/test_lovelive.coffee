@@ -39,3 +39,15 @@ describe "LoveLive", ->
     it 'get no response', (done) ->
       assert.equal @lovelive.call("完全にフルハウス"), null
       done()
+
+  describe "news", ->
+    beforeEach (done) ->
+      @lovelive = new LoveLive
+      done()
+
+    it 'news', (done) ->
+      @lovelive.news (headline) ->
+        assert.notEqual headline.length, 0
+        done()
+
+      
