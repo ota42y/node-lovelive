@@ -1,6 +1,6 @@
 # LoveLive!
 
-[![NPM](https://nodei.co/npm/node-lovelive.png)](https://nodei.co/npm/node-lovelive/)  
+[![NPM](https://nodei.co/npm/lovelive.png)](https://nodei.co/npm/lovelive/)  
 [![Build Status](https://travis-ci.org/ota42y/node-lovelive.svg)](https://travis-ci.org/ota42y/node-lovelive)
 ==========
 
