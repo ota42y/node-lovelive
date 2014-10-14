@@ -1,7 +1,7 @@
 # LoveLive!
 
-[![NPM](https://nodei.co/npm/node-lovelive..png)](https://nodei.co/npm/node-lovelive./)  
-[![Travis CI](https://travis-ci.org/ota42y/node-lovelive..svg?branch=master)](https://travis-ci.org/ota42y/node-lovelive..svg?branch=master)
+[![NPM](https://nodei.co/npm/node-lovelive.png)](https://nodei.co/npm/node-lovelive/)  
+[![Build Status](https://travis-ci.org/ota42y/node-lovelive.svg)](https://travis-ci.org/ota42y/node-lovelive)
 ==========
 
 ラブライブ！用
